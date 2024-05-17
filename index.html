@@ -32,13 +32,17 @@ h2{
 #gender{
     margin-top: 20px;
 }
+.link{
+    color:red;
+    font-weight: 800;
+}
  </style> 
  </head> 
  <body> 
     <div class="container "> 
         <h1>CITAS MÉDICAS</h1>
         <h2>INGRESA LOS DATOS REQUERIDOS</h2> 
-        <form action="/add-user" method="POST"> 
+        <form action="/agregar-usuario" method="POST"> 
             <label for="name">Nombre:</label> 
             <input type="text" id="name" name="name" required> <br> 
             <label for="last_name">Apellido:</label> 
@@ -49,6 +53,8 @@ h2{
             </select> <br> 
             <button class="btn btn-success mt-5" type="submit">Agregar Usuario</button>
         </form> 
+
+        <a href="/usuarios" methodo ="GET" class="btn btn-link link">Ir a la ruta: /usuarios</a>
         </div> 
     </body> 
     </html>

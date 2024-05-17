@@ -54,7 +54,7 @@ app.use(express.json());
 
 
 // Ruta para agregar un usuario
-app.post('/add-user', async (req, res) => {
+app.post('/agregar-usuario', async (req, res) => {
     try {
         const user = await getUsuario();
         dataUsuario.push(user);
