@@ -9,52 +9,26 @@
     <meta name="description" content="Desafío Citas Medicas"/>
     <title>Citas Medicas</title>
 </head>
-<style> 
-.container {
-  width: 50%;
-  margin: 0 auto; 
-  border: 2px solid #110505; 
-  padding: 20px;
-  background-color: rgb(155, 169, 169);
-}
-h1{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color:rgb(43, 0, 255);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-    margin-top: 20px;
-}
-h2{
-    font-size: 25px;
-    margin-bottom: 30px;
-}
-#gender{
-    margin-top: 20px;
-}
-.link{
-    color:red;
-    font-weight: 800;
-}
- </style> 
+
  </head> 
  <body> 
-    <div class="container "> 
-        <h1>CITAS MÉDICAS</h1>
-        <h2>INGRESA LOS DATOS REQUERIDOS</h2> 
+    <div class="container" style="width: 50%; margin: 0 auto; border: 2px solid #110505; padding: 20px; background-color: rgb(155, 169, 169); justify-content: center; text-align: center;">
+        <h1 class="title mt-5 text-primary"  style="font-weight: 800;">Citas Médicas</h1>
+
+        <h2 class ="subtitle text-black fw-bold my-3">INGRESA LOS DATOS REQUERIDOS</h2> 
         <form action="/agregar-usuario" method="POST"> 
             <label for="name">Nombre:</label> 
             <input type="text" id="name" name="name" required> <br> 
             <label for="last_name">Apellido:</label> 
             <input type="text" id="last_name" name="last_name" required> <br> <label for="gender">Género:</label> 
-            <select id="gender" name="gender" required> 
+            <select class="gender mt-3" name="gender" required> 
                 <option value="female">Femenino</option> 
                 <option value="male">Masculino</option> 
             </select> <br> 
-            <button class="btn btn-success mt-5" type="submit">Agregar Usuario</button>
+                <button class="btn btn-success mt-4" type="submit">Agregar Usuario</button>
         </form> 
 
-        <a href="/usuarios" methodo ="GET" class="btn btn-link link">Ir a la ruta: /usuarios</a>
+        <a href="/usuarios" methodo ="GET" class="btn btn-link  mt-5 text-danger" style="font-weight: 600">Ir a la ruta: /usuarios</a>
         </div> 
     </body> 
     </html>
